@@ -53,6 +53,10 @@ nav {
   font-size: 14px;
 }
 
+.ham__menu{
+  display: none;
+}
+
 /* logo */
 .logo {
   width: max-content;
@@ -106,7 +110,7 @@ nav {
   height: 100%;
   display: flex;
   flex-flow: row;
-  gap: 2rem;
+  gap: 24px;
 }
 
 .hero__image__container {
@@ -320,12 +324,14 @@ nav {
 .information__center__content {
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: start;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .center__info {
+  max-width: 40%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -390,7 +396,7 @@ nav {
   width: 80%;
 }
 
-.latest__news__heading{
+.latest__news__heading {
   font-size: 40px;
   font-family: "Sedan";
   font-weight: 400;
@@ -423,8 +429,8 @@ nav {
   top: -10px; /* using position just to hide the radius the image has after downloading*/
 }
 
-.latest__news__card__info__wrapper{
-  padding: 24px 48px 24px 48px; 
+.latest__news__card__info__wrapper {
+  padding: 24px 48px 24px 48px;
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -437,40 +443,43 @@ nav {
   width: 80%;
   font-size: 16px;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   line-height: 19.5px;
 }
 .latest__news__card__info__wrapper p {
   font-size: 12px;
   font-weight: 500;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   line-height: 14.63px;
 }
 
-.latest__news__card h1, .latest__news__card h2, .latest__news__card h3, .latest__news__card p{
+.latest__news__card h1,
+.latest__news__card h2,
+.latest__news__card h3,
+.latest__news__card p {
   color: black;
 }
 
-.more__btn{
+.more__btn {
   justify-self: end;
   align-self: flex-end;
   font-size: 14px;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   line-height: 17.07px;
 }
 
-.above__footer__decoration{
+.above__footer__decoration {
   padding: 48px 0 0 0;
-  display:flex;
+  display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
   gap: 0px;
+  width: 100%;
 }
 
 footer {
-  height: 400px;
   background-image: url("./public/assets/images/about_us_bg.png");
   background-position: center;
   background-size: cover;
@@ -478,18 +487,18 @@ footer {
   position: relative;
 }
 
-.footer__content__container{
+.footer__content__container {
   width: 80%;
-  padding: 48px 0;
+  padding: 48px 0 12px 0;
   height: 100%;
   margin: auto auto;
   display: flex;
   flex-flow: column;
+  gap: 48px;
   justify-content: space-between;
-  
 }
 
-.details__container{
+.details__container {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -501,42 +510,176 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .details__container div {
   width: 33%;
 }
-.useful__links__list, .contact__info__list{
+
+.useful__links__list,
+.contact__info__list {
   display: flex;
   flex-flow: column;
   gap: 24px;
 }
 
-.contact__info__list li a{
+.contact__info__list li a {
   display: flex;
   flex-flow: row;
   gap: 24px;
 }
 
-.payments__content{
+.payments__content {
   text-align: end;
   justify-self: flex-end;
   align-self: flex-start;
 }
 
-.copyright__contents{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px; 
-}
-
-.social__links{
+.copyright__contents {
+  justify-self: flex-end;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+}
+
+.social__links {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (max-width: 960px) {
+  header {
+    width: 100%;
+    padding: 24px 24px;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    /* display: none; */
+    display: row;
+    width: auto;
+    justify-content: end;
+  }
+  .ham__menu{
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .ham__menu img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .menu__list, .auth__actions {
+    display: none;
+  }
+
+  nav ul li {
+    width: max-content;
+  }
+
+  .auth__actions button{
+    width: max-content;
+    /* width: 100px; */
+  }
+  .hero_container {
+    /* overflow: unset; */
+    height: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero__content__container {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .hero__image__container img {
+    height: unset;
+    width: 100%;
+  }
+
+  .about__us__container {
+    height: 100%;
+    width: 90%;}
+
+  .information__center__content {
+    flex-flow: column;
+    align-items: center;
+  }
+  .center__info {
+    max-width: unset;
+    width: 100%;
+    align-items: center;
+  }
+  .center__info img {
+    height: 150px;
+  }
+
+
+  .latest__news__content {
+    flex-flow: column;
+  }
+  .temple__view__container {
+    width: 90%;
+    flex-flow: column;
+  }
+  .temple__view__video_container {
+    width: 100%;
+  }
+  .above__footer__decoration img {
+    width: 50%;
+  }
+
+  .footer__content__container {
+    width: 100%;
+    padding: 24px 24px;
+  }
+
+  .details__container {
+    flex-flow: column;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+  }
+  .details__container div {
+    width: 100%;
+  }
+
+  .useful__links__list,
+  .contact__info__list {
+    flex-flow: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .contact__info__list li a {
+    gap: 12px;
+  }
+
+  .payments__content {
+    text-align: start;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .copyright__contents {
+    justify-self: flex-end;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
 }
