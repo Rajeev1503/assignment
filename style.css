@@ -597,7 +597,7 @@ footer {
   .auth__actions button {
     width: max-content;
   }
-  .hero_container {
+  .hero__section__container {
     height: 80%;
     display: flex;
     flex-flow: column;
