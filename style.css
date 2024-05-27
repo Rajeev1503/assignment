@@ -103,7 +103,7 @@ nav {
   color: white !important;
 }
 
-.hero_container {
+.hero__section__container {
   overflow: hidden;
   height: 100%;
   display: flex;
@@ -111,12 +111,12 @@ nav {
   gap: 24px;
 }
 
-.hero__image__container {
+.hero__image__wrapper {
   /* width: 60%; */
   padding: 24px 0 0 0;
 }
 
-.hero__image__container img {
+.hero__image__wrapper img {
   height: 100%;
 }
 
@@ -124,7 +124,7 @@ nav {
   padding: 60px 140px 0px 0px;
 }
 
-.hero__content {
+.hero__content__wrapper {
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -611,7 +611,7 @@ footer {
     padding: 24px;
   }
 
-  .hero__image__container img {
+  .hero__image__wrapper img {
     height: unset;
     width: 100%;
   }
