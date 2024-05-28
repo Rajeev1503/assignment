@@ -111,26 +111,26 @@ nav {
   gap: 24px;
 }
 
-.hero__image__wrapper {
+.hero__section__image__wrapper {
   /* width: 60%; */
   padding: 24px 0 0 0;
 }
 
-.hero__image__wrapper img {
+.hero__section__image__wrapper img {
   height: 100%;
 }
 
-.hero__content__container {
+.hero__section__content__container {
   padding: 60px 140px 0px 0px;
 }
 
-.hero__content__wrapper {
+.hero__section__content__wrapper {
   display: flex;
   flex-flow: column;
   gap: 24px;
 }
 
-.hero__content__para {
+.hero__section__content__para {
   text-align: justify;
   font-weight: 400;
   font-family: "Lato";
@@ -139,13 +139,13 @@ nav {
   opacity: 75%;
 }
 
-.hero__side__image {
+.hero__section__side__image {
   position: absolute;
   right: 10px;
   top: 40px;
 }
 
-.hero__btns__container {
+.hero__section__btns__container {
   display: flex;
   flex-flow: row;
   gap: 16px;
@@ -156,11 +156,11 @@ nav {
   color: white;
 }
 
-.hero__links__container {
+.hero__section__links__container {
   padding: 24px 0 0 0;
 }
 
-.hero__links__list {
+.hero__section__links__list {
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -606,12 +606,12 @@ footer {
     gap: 24px;
   }
 
-  .hero__content__container {
+  .hero__section__content__container {
     width: 90%;
     padding: 24px;
   }
 
-  .hero__image__wrapper img {
+  .hero__section__image__wrapper img {
     height: unset;
     width: 100%;
   }
