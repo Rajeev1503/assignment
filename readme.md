@@ -22,17 +22,6 @@ This project is hosted on github pages to server static files.
 
 Here's an overview of the project's folder structure:
 
-assignment/
-├── images/
-│ ├── assets
-│ │ └── temple_view.png
-│ │ └── ...
-│ └── site
-│   └── logo.svg
-├── index.html
-├── styles.css
-└── README.md
-
 - `images/`: Contains the images used in the website.
 - `index.html`: The main HTML file for the website.
 - `style.css`: Contains the custom CSS styles for the website.
