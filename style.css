@@ -42,6 +42,11 @@ ul {
   background: linear-gradient(to bottom, #ffc91d, #ef7816);
   color: #480000;
 }
+
+.accent__bg {
+  background-color: #f7f0f0;
+}
+
 /* global css ends */
 
 /* header starts*/
@@ -315,11 +320,11 @@ nav {
 /* information center section starts */
 .information__center__section {
   padding: 64px 0 0 0;
-  margin: auto auto;
-  width: 80%;
 }
 
 .information__center__container {
+  width: 80%;
+  margin: auto auto;
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -373,11 +378,11 @@ nav {
 /* upcoming events section starts */
 .upcoming__events__section {
   padding: 64px 0 0 0;
-  margin: auto auto;
-  width: 80%;
 }
 
 .upcoming__events__container {
+  width: 80%;
+  margin: auto auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -550,7 +555,24 @@ footer {
 .contact__info__list li a {
   display: flex;
   flex-flow: row;
+  justify-content: start;
+  align-items: center;
   gap: 24px;
+}
+.contact__info__list li a p{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.phone__numbers__container{
+  display: flex;
+  flex-flow: row;
+}
+.phone__numbers__container div{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 .payments__content {
