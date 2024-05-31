@@ -25,6 +25,7 @@ a {
 ul {
   text-decoration: none;
   list-style: none;
+  padding: 0px; /* padding was preapplied by bootstrap to ul elements*/
 }
 
 .montserrat__font__family{
@@ -185,6 +186,7 @@ nav {
 }
 
 .link__item {
+  width: 100%;
   height: 72px;
   display: flex;
   flex-flow: row;
@@ -258,26 +260,26 @@ nav {
 
 /* temple view section starts*/
 .temple__view__container {
-  width: 70%;
+  width: 80%;
   margin: auto auto;
-  padding-top: 48px;
+  padding: 48px 0px 0px 0px;
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 48px;
 }
 
 .temple__view__video__container {
   position: relative;
-  width: 100%;
-  height: 312px;
+  /* width: 40%; */
+  height: 100%;
   border-radius: 8px;
 }
 
 .temple__view__video{
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 312px;
   filter: brightness(50%);
 }
 
@@ -289,6 +291,7 @@ nav {
 }
 
 .temple__view__content {
+  /* width: 60%; */
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -344,23 +347,33 @@ nav {
 .information__center__content {
   display: flex;
   flex-flow: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: start;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
 .center__info {
-  max-width: 40%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   text-align: center;
 }
 
+.center__info img {
+  height: 250px;
+  width: 576px;
+}
+
+.center__info h2, .center__info p {
+  max-width: 576px;
+  width: 100%;
+  padding: 0 16px;
+}
+
 .center__info h2 {
+  font-size: 30px;
   font-family: "Montserrat";
   font-weight: 600;
   text-transform: uppercase;
@@ -407,7 +420,7 @@ nav {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   overflow: hidden;
 }
 /* upcoming events section ends */
@@ -470,12 +483,19 @@ footer {
 .details__container div {
   width: 33%;
 }
+.details__container div h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  line-height: 29.26px;
+  padding-bottom: 8px;
+}
 
 .useful__links__list,
 .contact__info__list {
   display: flex;
   flex-flow: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .contact__info__list li a {
@@ -485,10 +505,16 @@ footer {
   align-items: center;
   gap: 24px;
 }
-.contact__info__list li a p{
+
+.contact__info__list li a p {
   padding: 0px !important;
   margin: 0px !important;
 }
+
+.contact__info__list li:nth-child(3) a p {
+  line-height: 24px;
+}
+
 
 .phone__numbers__container{
   display: flex;
@@ -527,7 +553,7 @@ footer {
 /* footer ends */
 
 /* response css starts */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   header {
     width: 100%;
     padding: 24px 24px;
@@ -595,8 +621,8 @@ footer {
     width: 90%;
   }
 
-  .temple__view__container, .temple__view__video__container .upcoming__events__container, .information__center__container {
-    width: 90%;
+  .temple__view__container, .temple__view__video__container, .upcoming__events__container, .information__center__container {
+    width: 90% !important;
   }
 
   .information__center__content {
@@ -609,19 +635,33 @@ footer {
     align-items: center;
   }
   .center__info img {
-    height: 150px;
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: 100%;
   }
 
   .latest__news__content {
     flex-flow: column;
   }
-  .temple__view__container {
+  .temple__view__container, .temple__view__content {
     width: 90%;
     flex-flow: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
   }
   .temple__view__video_container {
+    justify-content: start;
+    align-items: start;
     width: 100%;
   }
+
+  .temple__view__video{
+    width: 100%;
+    height: 312px;
+    filter: brightness(50%);
+  }
+
   .above__footer__decoration img {
     width: 50%;
   }
