@@ -412,86 +412,13 @@ nav {
 }
 /* upcoming events section ends */
 
+
 /* latest news section starts */
-.latest__news__section {
-  padding: 64px 0 0 0;
-  margin: auto auto;
-  width: 80%;
-}
 
-.latest__news__heading {
-  font-size: 40px;
-  font-family: "Sedan";
-  font-weight: 400;
-  color: black;
-  text-align: center;
-}
-
-.latest__news__content {
-  padding: 48px 0 0 0;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.latest__news__card {
-  background-color: transparent;
-  box-shadow: 0 0 10px 1px rgb(141, 102, 102);
-  border-radius: 8px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.latest__news__card img {
-  width: 100%;
-  position: relative;
-  top: -10px; /* using position just to hide the radius the image has after downloading*/
-}
-
-.latest__news__card__info__wrapper {
-  padding: 24px 48px 24px 48px;
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-
-.latest__news__card__info__wrapper h2 {
-  width: 80%;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Montserrat";
-  line-height: 19.5px;
-}
-.latest__news__card__info__wrapper p {
-  font-size: 12px;
-  font-weight: 500;
-  font-family: "Montserrat";
-  line-height: 14.63px;
-}
-
-.latest__news__card h1,
-.latest__news__card h2,
-.latest__news__card h3,
-.latest__news__card p {
-  color: black;
-}
-
-.more__btn {
-  justify-self: end;
-  align-self: flex-end;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Montserrat";
-  line-height: 17.07px;
-}
+    /* latest news section is styled using bootstrap check in index.html */
+    
 /* latest news section ends */
+
 
 /* decoration above footer starts */
 .above__footer__decoration {
